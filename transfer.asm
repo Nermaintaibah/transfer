@@ -1,0 +1,10 @@
+               LXI H E000
+	LXI D E100
+	MVI C,05
+RPT	MOV A,M
+	STAX D
+	INX H
+	INX D
+	DCR C
+	JNZ RPT
+	HLT
